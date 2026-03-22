@@ -1,0 +1,109 @@
+"===== CREATE CLASSES ====="
+
+Object << #Ride
+    slots: { #rideID. #pickupLocation. #dropoffLocation. #distance };
+    package: 'RideSharing'.
+
+Ride << #StandardRide
+    slots: {};
+    package: 'RideSharing'.
+
+Ride << #PremiumRide
+    slots: {};
+    package: 'RideSharing'.
+
+Object << #Driver
+    slots: { #driverID. #name. #rating. #assignedRides };
+    package: 'RideSharing'.
+
+Object << #Rider
+    slots: { #riderID. #name. #requestedRides };
+    package: 'RideSharing'.
+
+
+"===== ADD METHODS ====="
+
+(Ride compile: 'initialize: id pickup: pickup dropoff: dropoff dist: dist
+    rideID := id.
+    pickupLocation := pickup.
+    dropoffLocation := dropoff.
+    distance := dist.').
+
+(Ride compile: 'fare
+    ^ distance * 1.0.').
+
+(Ride compile: 'rideDetails
+    Transcript show: ''Ride ID: '', rideID printString; cr.
+    Transcript show: ''Pickup: '', pickupLocation; cr.
+    Transcript show: ''Dropoff: '', dropoffLocation; cr.
+    Transcript show: ''Distance: '', distance printString; cr.').
+
+(StandardRide compile: 'fare
+    ^ distance * 1.5.').
+
+(PremiumRide compile: 'fare
+    ^ distance * 3.0.').
+
+(Driver compile: 'initialize: id name: n rating: r
+    driverID := id.
+    name := n.
+    rating := r.
+    assignedRides := OrderedCollection new.').
+
+(Driver compile: 'addRide: aRide
+    assignedRides add: aRide.').
+
+(Driver compile: 'getDriverInfo
+    Transcript show: ''Driver ID: '', driverID printString; cr.
+    Transcript show: ''Name: '', name; cr.
+    Transcript show: ''Rating: '', rating printString; cr.
+    Transcript show: ''Total Rides: '', assignedRides size printString; cr.').
+
+(Rider compile: 'initialize: id name: n
+    riderID := id.
+    name := n.
+    requestedRides := OrderedCollection new.').
+
+(Rider compile: 'requestRide: aRide
+    requestedRides add: aRide.').
+
+(Rider compile: 'viewRides
+    Transcript show: ''Ride history for '', name; cr.
+    requestedRides do: [:ride |
+        ride rideDetails.
+        Transcript show: ''Fare: '', ride fare printString; cr.
+        Transcript show: ''----------------------''; cr.
+    ].').
+
+
+"===== TEST / RUN PROGRAM ====="
+
+r1 := StandardRide new.
+r1 initialize: 1 pickup: 'Airport' dropoff: 'Hotel' dist: 10.
+
+r2 := PremiumRide new.
+r2 initialize: 2 pickup: 'Mall' dropoff: 'Downtown' dist: 8.
+
+rides := OrderedCollection new.
+rides add: r1.
+rides add: r2.
+
+Transcript show: 'All Ride Details'; cr.
+
+rides do: [:r |
+    r rideDetails.
+    Transcript show: 'Fare: ', r fare printString; cr.
+    Transcript show: '===================='; cr.
+].
+
+d1 := Driver new.
+d1 initialize: 101 name: 'John' rating: 4.8.
+d1 addRide: r1.
+d1 addRide: r2.
+d1 getDriverInfo.
+
+rider1 := Rider new.
+rider1 initialize: 201 name: 'Alice'.
+rider1 requestRide: r1.
+rider1 requestRide: r2.
+rider1 viewRides.
