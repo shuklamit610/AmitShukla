@@ -5,36 +5,35 @@
 def insertion_sort_desc(arr):
     """
     Sorts a list in monotonically decreasing order using Insertion Sort.
-    
-    Parameters:
-        arr (list): List of numbers to be sorted.
-    
-    Returns:
-        list: Sorted list in decreasing order.
     """
-    
-    # Traverse through elements starting from the second element
+
+    # Start from the second element
     for j in range(1, len(arr)):
-        key = arr[j]      # Element to be inserted into the sorted portion
+        key = arr[j]
         i = j - 1
 
-        # Move elements that are smaller than 'key'
-        # one position ahead to make room for 'key'
+        # Shift smaller elements to the right
         while i >= 0 and arr[i] < key:
             arr[i + 1] = arr[i]
-            i = i - 1
+            i -= 1
 
-        # Insert the key in its correct position
+        # Insert the key at the correct position
         arr[i + 1] = key
 
     return arr
 
 
-# Example usage
-numbers = [31, 41, 59, 26, 41, 58]
+# Take input from the user
+user_input = input("Enter numbers separated by spaces: ")
 
+# Convert the input string into a list of integers
+numbers = list(map(int, user_input.split()))
+
+# Display the original array
 print("Original array:", numbers)
 
+# Sort the array in decreasing order
 sorted_numbers = insertion_sort_desc(numbers)
 
+# Display the sorted array
 print("Sorted array in decreasing order:", sorted_numbers)
