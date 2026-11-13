@@ -1,0 +1,6 @@
+system.cpu.fetch.status::icacheWaitResponse     33319751     31.98%    100.00% # Number of cycles fetch is waiting for the Icache to respond (Cycle)
+system.cpu.fetch.cacheLines                   1024447                       # Number of cache lines fetched (Count)
+system.cpu.fetchStats0.icacheStallCycles     33319751                       # ICache total stall cycles (Cycle)
+system.cpu.lsq0.blockedByCache                1005404                       # Number of times an access to memory failed due to the cache being blocked (Count)
+system.cpu.mmu.dtb.rdMisses                       620                       # TLB misses on read requests (Count)
+system.cpu.mmu.dtb.wrMisses                       122                       # TLB misses on write requests (Count)

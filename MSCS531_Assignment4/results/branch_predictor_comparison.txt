@@ -1,0 +1,19 @@
+Branch Predictor Comparison
+==========================
+LocalBP:
+simSeconds                                   0.001373                       # Number of seconds simulated (Second)
+simTicks                                   1372712000                       # Number of ticks simulated (Tick)
+simInsts                                       139677                       # Number of instructions simulated (Count)
+system.cpu.numCycles                          1372713                       # Number of cpu cycles simulated (Cycle)
+system.cpu.branchPred.committed_0::total        35477                       # Number of branches finally committed  (Count)
+system.cpu.branchPred.mispredicted_0::total          912                       # Number of committed branches that were mispredicted. (Count)
+system.cpu.branchPred.BTBHitRatio            0.380902                       # BTB Hit Ratio (Ratio)
+
+TournamentBP:
+simSeconds                                   0.001374                       # Number of seconds simulated (Second)
+simTicks                                   1373694000                       # Number of ticks simulated (Tick)
+simInsts                                       139677                       # Number of instructions simulated (Count)
+system.cpu.numCycles                          1373695                       # Number of cpu cycles simulated (Cycle)
+system.cpu.branchPred.committed_0::total        35477                       # Number of branches finally committed  (Count)
+system.cpu.branchPred.mispredicted_0::total          926                       # Number of committed branches that were mispredicted. (Count)
+system.cpu.branchPred.BTBHitRatio            0.380906                       # BTB Hit Ratio (Ratio)
