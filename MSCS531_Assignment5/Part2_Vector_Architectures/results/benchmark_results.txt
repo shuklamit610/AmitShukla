@@ -1,0 +1,70 @@
+Assignment 5 - Part 2
+CPU: Intel Core Ultra 5 225U
+Dataset: 10,000,000 elements
+Repeats: 1
+
+Scalar C:
+Dataset size: 10000000 elements
+Repeats: 1
+Execution time: 0.048811 seconds
+Checksum: 37499996249999.75
+Dataset size: 10000000 elements
+Repeats: 1
+Execution time: 0.044657 seconds
+Checksum: 37499996249999.75
+Dataset size: 10000000 elements
+Repeats: 1
+Execution time: 0.028655 seconds
+Checksum: 37499996249999.75
+Dataset size: 10000000 elements
+Repeats: 1
+Execution time: 0.030140 seconds
+Checksum: 37499996249999.75
+Dataset size: 10000000 elements
+Repeats: 1
+Execution time: 0.040847 seconds
+Checksum: 37499996249999.75
+
+Compiler-vectorized C:
+Dataset size: 10000000 elements
+Repeats: 1
+Execution time: 0.026521 seconds
+Checksum: 37499996249999.75
+Dataset size: 10000000 elements
+Repeats: 1
+Execution time: 0.034575 seconds
+Checksum: 37499996249999.75
+Dataset size: 10000000 elements
+Repeats: 1
+Execution time: 0.021412 seconds
+Checksum: 37499996249999.75
+Dataset size: 10000000 elements
+Repeats: 1
+Execution time: 0.022246 seconds
+Checksum: 37499996249999.75
+Dataset size: 10000000 elements
+Repeats: 1
+Execution time: 0.025055 seconds
+Checksum: 37499996249999.75
+
+Explicit AVX2:
+Dataset size: 10000000 elements
+Repeats: 1
+AVX2 execution time: 0.025241 seconds
+Checksum: 37499996249999.75
+Dataset size: 10000000 elements
+Repeats: 1
+AVX2 execution time: 0.022865 seconds
+Checksum: 37499996249999.75
+Dataset size: 10000000 elements
+Repeats: 1
+AVX2 execution time: 0.021537 seconds
+Checksum: 37499996249999.75
+Dataset size: 10000000 elements
+Repeats: 1
+AVX2 execution time: 0.022935 seconds
+Checksum: 37499996249999.75
+Dataset size: 10000000 elements
+Repeats: 1
+AVX2 execution time: 0.021923 seconds
+Checksum: 37499996249999.75

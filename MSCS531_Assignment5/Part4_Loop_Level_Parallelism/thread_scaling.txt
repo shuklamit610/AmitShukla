@@ -1,0 +1,35 @@
+===== THREADS=1 =====
+Sequential:          0.051400 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.008758 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.009010 s
+For-simd checksum:    308750000.00
+===== THREADS=2 =====
+Sequential:          0.039165 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.011375 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.007160 s
+For-simd checksum:    308750000.00
+===== THREADS=4 =====
+Sequential:          0.028377 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.015480 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.007347 s
+For-simd checksum:    308750000.00
+===== THREADS=8 =====
+Sequential:          0.044965 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.048783 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.008183 s
+For-simd checksum:    308750000.00
+===== THREADS=14 =====
+Sequential:          0.039688 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.041093 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.005442 s
+For-simd checksum:    308750000.00

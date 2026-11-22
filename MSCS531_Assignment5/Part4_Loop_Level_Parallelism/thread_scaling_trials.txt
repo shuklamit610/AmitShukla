@@ -1,0 +1,180 @@
+========== THREADS=1 ==========
+--- TRIAL 1 ---
+Sequential:          0.118941 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.009405 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.009568 s
+For-simd checksum:    308750000.00
+--- TRIAL 2 ---
+Sequential:          0.039777 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.009354 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.010719 s
+For-simd checksum:    308750000.00
+--- TRIAL 3 ---
+Sequential:          0.028094 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.009399 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.014459 s
+For-simd checksum:    308750000.00
+--- TRIAL 4 ---
+Sequential:          0.036223 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.009163 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.017102 s
+For-simd checksum:    308750000.00
+--- TRIAL 5 ---
+Sequential:          0.053604 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.008959 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.009441 s
+For-simd checksum:    308750000.00
+========== THREADS=2 ==========
+--- TRIAL 1 ---
+Sequential:          0.031018 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.008098 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.005916 s
+For-simd checksum:    308750000.00
+--- TRIAL 2 ---
+Sequential:          0.052805 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.007182 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.006300 s
+For-simd checksum:    308750000.00
+--- TRIAL 3 ---
+Sequential:          0.036285 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.008325 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.008171 s
+For-simd checksum:    308750000.00
+--- TRIAL 4 ---
+Sequential:          0.026422 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.007784 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.007098 s
+For-simd checksum:    308750000.00
+--- TRIAL 5 ---
+Sequential:          0.037816 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.007050 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.006137 s
+For-simd checksum:    308750000.00
+========== THREADS=4 ==========
+--- TRIAL 1 ---
+Sequential:          0.041596 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.017239 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.007083 s
+For-simd checksum:    308750000.00
+--- TRIAL 2 ---
+Sequential:          0.037120 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.015182 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.007359 s
+For-simd checksum:    308750000.00
+--- TRIAL 3 ---
+Sequential:          0.037330 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.006041 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.004784 s
+For-simd checksum:    308750000.00
+--- TRIAL 4 ---
+Sequential:          0.038206 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.015591 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.009053 s
+For-simd checksum:    308750000.00
+--- TRIAL 5 ---
+Sequential:          0.027316 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.015877 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.006230 s
+For-simd checksum:    308750000.00
+========== THREADS=8 ==========
+--- TRIAL 1 ---
+Sequential:          0.046993 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.010091 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.004396 s
+For-simd checksum:    308750000.00
+--- TRIAL 2 ---
+Sequential:          0.040773 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.006544 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.005515 s
+For-simd checksum:    308750000.00
+--- TRIAL 3 ---
+Sequential:          0.047541 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.010920 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.006643 s
+For-simd checksum:    308750000.00
+--- TRIAL 4 ---
+Sequential:          0.038334 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.011898 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.005683 s
+For-simd checksum:    308750000.00
+--- TRIAL 5 ---
+Sequential:          0.030521 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.009174 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.005771 s
+For-simd checksum:    308750000.00
+========== THREADS=14 ==========
+--- TRIAL 1 ---
+Sequential:          0.038374 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.030991 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.010697 s
+For-simd checksum:    308750000.00
+--- TRIAL 2 ---
+Sequential:          0.033734 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.025728 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.010504 s
+For-simd checksum:    308750000.00
+--- TRIAL 3 ---
+Sequential:          0.055766 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.020460 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.014075 s
+For-simd checksum:    308750000.00
+--- TRIAL 4 ---
+Sequential:          0.042139 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.031864 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.007458 s
+For-simd checksum:    308750000.00
+--- TRIAL 5 ---
+Sequential:          0.034997 s
+Sequential checksum: 308750000.00
+OpenMP parallel for: 0.029249 s
+Parallel checksum:   308750000.00
+OpenMP for simd:      0.006012 s
+For-simd checksum:    308750000.00
